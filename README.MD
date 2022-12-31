@@ -1,6 +1,6 @@
- ![GitHub](https://img.shields.io/github/license/shells-dw/loupedeck-pihole)
- ![GitHub last commit](https://img.shields.io/github/last-commit/shells-dw/loupedeck-pihole)
-  ![GitHub downloads](https://img.shields.io/github/downloads/shells-dw/loupedeck-pihole/total)
+ ![GitHub](https://img.shields.io/github/license/shells-dw/worldclock)
+ ![GitHub last commit](https://img.shields.io/github/last-commit/shells-dw/loupedeck-worldclock)
+  ![GitHub downloads](https://img.shields.io/github/downloads/shells-dw/worldclock/total)
  [![Tip](https://img.shields.io/badge/Donate-PayPal-green.svg)]( https://www.paypal.com/donate?hosted_button_id=8KXD334CCEEC2) / [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4CE9LH)
 
  # Loupedeck World Clock Plugin
@@ -10,9 +10,7 @@
  ## What Is This (and what does it do?)
 
 It's a plugin for the [Loupedeck Live Consoles][Loupedeck] which allows to place time displays for places all around the world on the Loupedeck.
-
 It supports 12h and 24h time displays, can show the time, date, location of places in any time zone - or a mixture of these.
-
 No external connections are made, the database comes with the plugin and works locally.
 
 **Works on Windows and MacOS**
@@ -46,6 +44,12 @@ or use Ko-Fi [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi
 # Changelog
 ## [0.1.0] - 2022-12-31
 - initial release
+
+
+<details><summary>Changelog History</summary><p>
+-
+
+</p></details>
 
 
 <!-- Reference Links -->
