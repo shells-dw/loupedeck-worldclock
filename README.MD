@@ -1,0 +1,56 @@
+ ![GitHub](https://img.shields.io/github/license/shells-dw/loupedeck-pihole)
+ ![GitHub last commit](https://img.shields.io/github/last-commit/shells-dw/loupedeck-pihole)
+  ![GitHub downloads](https://img.shields.io/github/downloads/shells-dw/loupedeck-pihole/total)
+ [![Tip](https://img.shields.io/badge/Donate-PayPal-green.svg)]( https://www.paypal.com/donate?hosted_button_id=8KXD334CCEEC2) / [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4CE9LH)
+
+ # Loupedeck World Clock Plugin
+
+![Overview](/docs/overview.png)
+
+ ## What Is This (and what does it do?)
+
+It's a plugin for the [Loupedeck Live Consoles][Loupedeck] which allows to place time displays for places all around the world on the Loupedeck.
+
+It supports 12h and 24h time displays, can show the time, date, location of places in any time zone - or a mixture of these.
+
+No external connections are made, the database comes with the plugin and works locally.
+
+**Works on Windows and MacOS**
+
+## Release / Installation
+
+You can find the precompiled plugin lplug4 file in the [Releases][Releases]. Download and open it, your computer should already recognize this as a Loupedeck plugin file and offer to open it with Loupedeck Configuration Console - which will have the plugin available in the list then.
+
+## Usage
+
+![Menu](/docs/menu.png)
+
+Pull what you want to have displayed to a free button slot on your Loupedeck, select the zone and location for which you want to have the time shown, click save - and that's it.
+
+## Notes / Restrictions
+
+- While the date display will use your locale (the date format you set or that's automatically set based on your language settings by Windows) on Windows, the date on MacOS will always be displayed in US format due to how mono works (that's what makes .NET Framework run on MacOS). The same is true for the local clock that comes with Loupedeck by the way. In contrary this plugin is at least able to display 24h clock on MacOS :wink:
+- Etc/GMT offsets are geographical offsets westerly and easterly of Greenwich, not as commonly used a time offset. That means that GMT-2 is two timezones east of Greenwich (what you would normally refer to as GMT+2). Just flip + and - and you're good.
+- If your city is not available in the list, pick one that's in your timezone. You will find a city that's near you. This is for three reasons: first so that users don't have to search through multiple thousand locations, second because I didn't want your computer to perform external API calls to internet services that offer this kind of service, third because that's what the timezone database I use offers. 
+
+# I have an issue or miss a feature
+
+You can submit an issue or request a feature with [GitHub issues]. Please describe as good as possible what went wrong or doesn't act like you'd expect it to. 
+
+# Support
+
+If you'd like to drop me a coffee for the hours I've spent on this:
+[![Tip](https://img.shields.io/badge/Donate-PayPal-green.svg)]( https://www.paypal.com/donate?hosted_button_id=8KXD334CCEEC2), sponsor me on [GitHub](https://github.com/sponsors/shells-dw) 
+or use Ko-Fi [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4CE9LH)
+
+# Changelog
+## [0.1.0] - 2022-12-31
+- initial release
+
+
+<!-- Reference Links -->
+
+[Loupedeck]: https://loupedeck.com "Loupedeck.com"
+[Releases]: https://github.com/shells-dw/loupedeck-worldclock/releases "Releases"
+[GitHub issues]: https://github.com/shells-dw/loupedeck-worldclock/issues "GitHub issues link"
+
