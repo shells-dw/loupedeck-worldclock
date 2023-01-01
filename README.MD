@@ -1,6 +1,6 @@
- ![GitHub](https://img.shields.io/github/license/shells-dw/worldclock)
+ ![GitHub](https://img.shields.io/github/license/shells-dw/loupedeck-worldclock)
  ![GitHub last commit](https://img.shields.io/github/last-commit/shells-dw/loupedeck-worldclock)
-  ![GitHub downloads](https://img.shields.io/github/downloads/shells-dw/worldclock/total)
+  ![GitHub downloads](https://img.shields.io/github/downloads/shells-dw/loupedeck-worldclock/total)
  [![Tip](https://img.shields.io/badge/Donate-PayPal-green.svg)]( https://www.paypal.com/donate?hosted_button_id=8KXD334CCEEC2) / [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4CE9LH)
 
  # Loupedeck World Clock Plugin
