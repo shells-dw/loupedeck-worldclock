@@ -9,11 +9,12 @@
 
  ## What Is This (and what does it do?)
 
-It's a plugin for the [Loupedeck Live Consoles][Loupedeck] which allows to place time displays for places all around the world on the Loupedeck.
-It supports 12h and 24h time displays, can show the time, date, location of places in any time zone - or a mixture of these.
+It's a plugin for the [Loupedeck Consoles][Loupedeck] which allows to place time displays for places all around the world on the Loupedeck.
+It supports 12h and 24h time displays and analog clock faces which show the time, date, location of places in any time zone - or a mixture of all.
+
 No external connections are made, the database comes with the plugin and works locally.
 
-**Works on Windows and MacOS**
+- [x] **Works on Windows and MacOS**
 
 ## Release / Installation
 
@@ -25,15 +26,20 @@ You can find the precompiled plugin lplug4 file in the [Releases][Releases]. Dow
 
 Pull what you want to have displayed to a free button slot on your Loupedeck, select the zone and location for which you want to have the time shown, click save - and that's it.
 
+The buttons have no touch action.
+
 ## Notes / Restrictions
 
-- While the date display will use your locale (the date format you set or that's automatically set based on your language settings by Windows) on Windows, the date on MacOS will always be displayed in US format due to how mono works (that's what makes .NET Framework run on MacOS). The same is true for the local clock that comes with Loupedeck by the way. In contrary this plugin is at least able to display 24h clock on MacOS :wink:
-- Etc/GMT offsets are geographical offsets westerly and easterly of Greenwich, not as commonly used a time offset. That means that GMT-2 is two timezones east of Greenwich (what you would normally refer to as GMT+2). Just flip + and - and you're good.
-- If your city is not available in the list, pick one that's in your timezone. You will find a city that's near you. This is for three reasons: first so that users don't have to search through multiple thousand locations, second because I didn't want your computer to perform external API calls to internet services that offer this kind of service, third because that's what the timezone database I use offers. 
+- While the date display will use your locale (_the date format you set or that's automatically set based on your language settings by Windows_) on Windows, the date on MacOS will always be displayed in US format due to how mono works (_that's what makes .NET Framework run on MacOS_). The same is true for the local clock that comes with Loupedeck by the way. In contrary to the default clock, this plugin is at least able to display 24h clock on MacOS :wink:
+- Etc/GMT offsets are geographical offsets westerly and easterly of Greenwich, not as commonly used a time offset. That means that GMT-2 is two timezones east of Greenwich (what you would normally refer to as GMT+2). Just mentally flip + and - and you're good.
+- If your city is not available in the list, pick one that's in your timezone. You will find a city that's near you. This is for three reasons: 
+    - so that users don't have to search through multiple thousand locations
+    - because I didn't want your computer to have to perform _and wait for_ external API calls to internet services that offer this kind of service
+    - because that's what the timezone database I use offers. 
 
 # I have an issue or miss a feature
 
-You can submit an issue or request a feature with [GitHub issues]. Please describe as good as possible what went wrong or doesn't act like you'd expect it to. 
+You can submit an issue or request a feature with [GitHub issues] or start a [discussion](https://github.com/shells-dw/loupedeck-worldclock/discussions). Please describe as good as possible what went wrong or doesn't act like you'd expect it to when you open an issue. 
 
 # Support
 
@@ -42,12 +48,15 @@ If you'd like to drop me a coffee for the hours I've spent on this:
 or use Ko-Fi [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4CE9LH)
 
 # Changelog
-## [0.1.0] - 2022-12-31
-- initial release
+## [0.2.0] - 2023-01-01
+### Added
+- Analog watch faces
 
 
 <details><summary>Changelog History</summary><p>
--
+
+## [0.1.0] - 2022-12-31
+- initial release
 
 </p></details>
 
