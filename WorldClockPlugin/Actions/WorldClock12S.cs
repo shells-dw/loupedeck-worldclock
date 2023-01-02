@@ -10,11 +10,11 @@ namespace Loupedeck.WorldClockPlugin
 
 
 
-    public class WorldClockA : PluginDynamicCommand
+    public class WorldClock12S : PluginDynamicCommand
     {
         private WorldClockPlugin _plugin;
-        public WorldClockA()
-            : base(displayName: "Time Analog", description: "Shows an analog watchface with digital time", groupName: "Time") => this.MakeProfileAction("tree");
+        public WorldClock12S()
+            : base(displayName: "Time + Seconds (12h Format)", description: "Displays time with seconds in 12h format", groupName: "Time") => this.MakeProfileAction("tree");
         protected override PluginProfileActionData GetProfileActionData()
         {
             var tree = new PluginProfileActionTree("Select location");
@@ -51,24 +51,21 @@ namespace Loupedeck.WorldClockPlugin
             DateTimeZone zone = DateTimeZoneProviders.Tzdb[actionParameter];
             ZonedClock clock = SystemClock.Instance.InZone(zone);
             ZonedDateTime today = clock.GetCurrentZonedDateTime();
+
             Int32 idx = actionParameter.LastIndexOf("/");
-            var secHandLength = 35;
-            var minHandLength = 30;
-            var hrHandLength = 20;
-            Int32[] handCoord = new Int32[2];
             using (var bitmapBuilder = new BitmapBuilder(imageSize))
             {
-                bitmapBuilder.Clear(BitmapColor.Black);
-                var x1 = bitmapBuilder.Width * 0.5;
-                var y1 = bitmapBuilder.Width * 0.5;
-                bitmapBuilder.SetBackgroundImage(EmbeddedResources.ReadImage(EmbeddedResources.FindFile("watchface1.png")));
-                handCoord = HelperFunctions.MSCoord(Int32.Parse(today.ToString("ss", CultureInfo.InvariantCulture)), secHandLength, bitmapBuilder.Width, bitmapBuilder.Height);
-                bitmapBuilder.DrawLine(handCoord[0], handCoord[1], (Int32)x1, (Int32)y1, new BitmapColor(255, 0, 0), 1); 
-                handCoord = HelperFunctions.MSCoord(Int32.Parse(today.ToString("mm", CultureInfo.InvariantCulture)), minHandLength, bitmapBuilder.Width, bitmapBuilder.Height);
-                bitmapBuilder.DrawLine(handCoord[0], handCoord[1], (Int32)x1, (Int32)y1, new BitmapColor(120, 120, 120), 2);
-                handCoord = HelperFunctions.HrCoord(Int32.Parse(today.ToString("hh", CultureInfo.InvariantCulture)) % 12, Int32.Parse(today.ToString("mm", CultureInfo.InvariantCulture)), hrHandLength, bitmapBuilder.Width, bitmapBuilder.Height);
-                bitmapBuilder.DrawLine(handCoord[0], handCoord[1], (Int32)x1, (Int32)y1, new BitmapColor(120, 120, 120), 3);
+                if (!String.IsNullOrEmpty(actionParameter))
+                {
+                    var x1 = bitmapBuilder.Width * 0.1;
+                    var w = bitmapBuilder.Width * 0.8;
+                    var y1 = bitmapBuilder.Height * 0.28;
+                    var y2 = bitmapBuilder.Height * 0.42;
+                    var h = bitmapBuilder.Height * 0.3;
 
+                    bitmapBuilder.DrawText(today.ToString("hh:mm:ss", CultureInfo.InvariantCulture), (Int32)x1, (Int32)y1, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 17 : 9, imageSize == PluginImageSize.Width90 ? 11 : 8);
+                    bitmapBuilder.DrawText(today.ToString("tt", CultureInfo.InvariantCulture), (Int32)x1, (Int32)y2, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 12 : 9, imageSize == PluginImageSize.Width90 ? 10 : 8, 6);
+                }
                 return bitmapBuilder.ToImage();
             }
         }

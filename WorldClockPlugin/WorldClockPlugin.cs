@@ -30,7 +30,6 @@ namespace Loupedeck.WorldClockPlugin
         // This method is called when the plugin is loaded during the Loupedeck service start-up.
         public override void Load()
         {
-    //        WorldClockPluginInstaller.Install();
             HelperFunctions.ReadTzData();
             this.Timer();
         }

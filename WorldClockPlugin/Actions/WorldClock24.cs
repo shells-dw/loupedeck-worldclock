@@ -8,7 +8,7 @@ namespace Loupedeck.WorldClockPlugin
     using NodaTime;
     using NodaTime.Extensions;
 
-    // This class implements an example adjustment that counts the rotation ticks of a dial.
+
 
     public class WorldClock24 : PluginDynamicCommand
     {
@@ -35,7 +35,9 @@ namespace Loupedeck.WorldClockPlugin
         {
             this._plugin = base.Plugin as WorldClockPlugin;
             if (this._plugin is null)
+            {
                 return false;
+            }
 
             this._plugin.Tick += (sender, e) => this.ActionImageChanged("");
             return base.OnLoad();
