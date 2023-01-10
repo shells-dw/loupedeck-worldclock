@@ -30,6 +30,7 @@ The buttons have no touch action.
 
 ## Notes / Restrictions
 
+- Looking for Korean and Japanese speakers for the respective translation, get in touch!
 - While the date display will use your locale (_the date format you set or that's automatically set based on your language settings by Windows_) on Windows, the date on MacOS will always be displayed in US format due to how mono works (_that's what makes .NET Framework run on MacOS_). The same is true for the local clock that comes with Loupedeck by the way. In contrary to the default clock, this plugin is at least able to display 24h clock on MacOS :wink: Might be improved at some point in the future.
 - Etc/GMT offsets are geographical offsets westerly and easterly of Greenwich, not as commonly used a time offset. That means that GMT-2 is two timezones east of Greenwich (what you would normally refer to as GMT+2). Just mentally flip + and - and you're good.
 - If your city is not available in the list, pick one that's in your timezone. You will find a city that's near you. This is for three reasons: 
@@ -48,6 +49,12 @@ If you'd like to drop me a coffee for the hours I've spent on this:
 or use Ko-Fi [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4CE9LH)
 
 # Changelog
+## [1.1.0] - 2023-01-10
+### Added
+- UI Translation for German and French
+
+<details><summary>Changelog History</summary><p>
+
 ## [1.0.0] - 2023-01-02
 ### Added
 - Time + date displays without location
@@ -57,9 +64,6 @@ or use Ko-Fi [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi
 - Removed checks for non-nominal plugin stati (currently not seeing a reason for setting the status as this plugin doesn't depend on anything external, so why check for it)
 - General code cleanup
 - #beautified icons
-
-<details><summary>Changelog History</summary><p>
-
 ## [0.2.0] - 2023-01-01
 ### Added
 - Analog watch faces

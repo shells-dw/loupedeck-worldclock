@@ -1,0 +1,155 @@
+{
+  "time12": [
+    {
+      "displayName": "Heure (12h format d'heure)",
+      "description": "Affiche l'heure au format 12h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time12AD": [
+    {
+      "displayName": "Heure Analog + Digital (12h format d'heure)",
+      "description": "Cadran analogique avec heure numérique au format 12h",
+      "groupName": "Analog",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time12D": [
+    {
+      "displayName": "Heure + Date (12h format d'heure)",
+      "description": "Affiche l'heure au format 12h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time12DL": [
+    {
+      "displayName": "Heure + Date + Ville / Fuseau horaire (12h format d'heure)",
+      "description": "Affiche l'heure au format 12h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time12L": [
+    {
+      "displayName": "Heure + Ville / Fuseau horaire (12h format d'heure)",
+      "description": "Affiche l'heure au format 12h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time12S": [
+    {
+      "displayName": "Heure + Secondes (12h format d'heure)",
+      "description": "Affiche l'heure avec les secondes au format 12h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time12SL": [
+    {
+      "displayName": "Heure + Ville / Fuseau horaire + Secondes (12h format d'heure)",
+      "description": "Affiche l'heure avec les secondes au format 12h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time24": [
+    {
+      "displayName": "Heure (24h format d'heure)",
+      "description": "Affiche l'heure au format 24h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time24AD": [
+    {
+      "displayName": "Heure Analog + Digital (24h format d'heure)",
+      "description": "Analoges Ziffernblatt mit Digital-Heure im 24h format d'heure",
+      "groupName": "Analog",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time24D": [
+    {
+      "displayName": "Heure + Date (24h format d'heure)",
+      "description": "Affiche l'heure au format 24h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time24DL": [
+    {
+      "displayName": "Heure + Date + Ville / Fuseau horaire (24h format d'heure)",
+      "description": "Affiche l'heure au format 24h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time24L": [
+    {
+      "displayName": "Heure + Ville / Fuseau horaire (24h format d'heure)",
+      "description": "Affiche l'heure au format 24h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time24S": [
+    {
+      "displayName": "Heure + Secondes (24h format d'heure)",
+      "description": "Affiche l'heure au format 24h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time24SL": [
+    {
+      "displayName": "Heure + Ville / Fuseau horaire + Secondes (24h format d'heure)",
+      "description": "Affiche l'heure au format 24h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "timeA": [
+    {
+      "displayName": "Heure Analog",
+      "description": "Cadran analogique avec heure digitale",
+      "groupName": "Analog",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "timeAL": [
+    {
+      "displayName": "Heure Analog + Stadt / Zeitzone",
+      "description": "Cadran analogique avec ville / fuseau horaire",
+      "groupName": "Analog",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "date": [
+    {
+      "displayName": "Date",
+      "description": "Affiche la date actuelle",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ]
+}

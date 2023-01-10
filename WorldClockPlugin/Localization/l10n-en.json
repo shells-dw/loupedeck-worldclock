@@ -1,0 +1,155 @@
+{
+  "time12": [
+    {
+      "displayName": "Time (12h format)",
+      "description": "Displays the time in 12h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time12AD": [
+    {
+      "displayName": "Time Analog + Digital (12h format)",
+      "description": "Displays an analog watchface with digital time in 12h format",
+      "groupName": "Analog",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time12D": [
+    {
+      "displayName": "Time + Date (12h format)",
+      "description": "Displays the time in 12h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time12DL": [
+    {
+      "displayName": "Time + Date + Location (12h format)",
+      "description": "Displays the time in 12h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time12L": [
+    {
+      "displayName": "Time + Location (12h format)",
+      "description": "Displays the time in 12h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time12S": [
+    {
+      "displayName": "Time + Seconds (12h format)",
+      "description": "Displays the time with seconds in 12h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time12SL": [
+    {
+      "displayName": "Time + Location + Seconds (12h format)",
+      "description": "Displays time with seconds in 12h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time24": [
+    {
+      "displayName": "Time (24h format)",
+      "description": "Displays time in 24h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time24AD": [
+    {
+      "displayName": "Time Analog + Digital (24h format)",
+      "description": "Displays an analog watchface with digital time in 24h format",
+      "groupName": "Analog",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time24D": [
+    {
+      "displayName": "Time + Date (24h format)",
+      "description": "Displays time in 24h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time24DL": [
+    {
+      "displayName": "Time + Date + Location (24h format)",
+      "description": "Displays time in 24h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time24L": [
+    {
+      "displayName": "Time + Location (24h format)",
+      "description": "Displays time in 24h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time24S": [
+    {
+      "displayName": "Time + Seconds (24h format)",
+      "description": "Displays time in 24h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time24SL": [
+    {
+      "displayName": "Time + Location + Seconds (24h format)",
+      "description": "Displays time in 24h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "timeA": [
+    {
+      "displayName": "Time Analog",
+      "description": "Displays an analog watchface with digital time",
+      "groupName": "Analog",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "timeAL": [
+    {
+      "displayName": "Time Analog + Location",
+      "description": "Displays an analog watchface with location",
+      "groupName": "Analog",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "date": [
+    {
+      "displayName": "Date",
+      "description": "Display date",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ]
+}

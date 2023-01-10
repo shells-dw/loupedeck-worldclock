@@ -2,9 +2,11 @@ namespace Loupedeck.WorldClockPlugin
 {
     using System;
     using System.Globalization;
+    using System.Collections.Generic;
     using System.Threading;
 
     using Loupedeck.WorldClockPlugin.Helpers;
+    using Loupedeck.WorldClockPlugin.l10n;
 
     using NodaTime;
     using NodaTime.Extensions;
@@ -14,13 +16,15 @@ namespace Loupedeck.WorldClockPlugin
     public class WorldClock12D : PluginDynamicCommand
     {
         private WorldClockPlugin _plugin;
+        private L10n _l10n;
+        private Dictionary<String, String> l7dValues;
         public WorldClock12D()
-            : base(displayName: "Time + Date (12h Format)", description: "Shows time in 12h format", groupName: "Date") => this.MakeProfileAction("tree");
+            : base() => this.MakeProfileAction("tree");
         protected override PluginProfileActionData GetProfileActionData()
         {
             var tree = new PluginProfileActionTree("Select location");
-            tree.AddLevel("Zone");
-            tree.AddLevel("Location");
+            tree.AddLevel(this.l7dValues["zone"]);
+            tree.AddLevel(this.l7dValues["location"]);
 
             foreach (String zone in Globals.tzNames.AllKeys)
             {
@@ -39,7 +43,20 @@ namespace Loupedeck.WorldClockPlugin
             {
                 return false;
             }
-
+            this._l10n = new L10n(this._plugin);
+            this.l7dValues = this._l10n.GetL7dNames("time12D");
+            if (this.l7dValues != null)
+            {
+                this.DisplayName = this.l7dValues["displayName"];
+                this.Description = this.l7dValues["description"];
+                this.GroupName = this.l7dValues["groupName"];
+            }
+            else
+            {
+                this.DisplayName = "Time + Date (12h Format)";
+                this.GroupName = "Digital";
+                this._plugin.Log.Info($"12hAD : l7dValues was empty or null: DisplayName: {this.l7dValues["displayName"]}, groupName: {this.l7dValues["groupName"]}.");
+            }
             this._plugin.Tick += (sender, e) => this.ActionImageChanged("");
             return base.OnLoad();
         }

@@ -1,0 +1,155 @@
+{
+  "time12": [
+    {
+      "displayName": "Uhrzeit (12h Format)",
+      "description": "Zeigt die Uhrzeit im 12h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time12AD": [
+    {
+      "displayName": "Uhrzeit Analog + Digital (12h Format)",
+      "description": "Analoges Ziffernblatt mit Digital-Uhrzeit im 12h Format",
+      "groupName": "Analog",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time12D": [
+    {
+      "displayName": "Uhrzeit + Datum (12h Format)",
+      "description": "Zeigt die Uhrzeit im 12h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time12DL": [
+    {
+      "displayName": "Uhrzeit + Datum + Stadt / Zeitzone (12h Format)",
+      "description": "Zeigt die Uhrzeit im 12h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time12L": [
+    {
+      "displayName": "Uhrzeit + Stadt / Zeitzone (12h Format)",
+      "description": "Zeigt die Uhrzeit im 12h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time12S": [
+    {
+      "displayName": "Uhrzeit + Sekunden (12h Format)",
+      "description": "Zeigt die Uhrzeit mit Sekunden im 12h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time12SL": [
+    {
+      "displayName": "Uhrzeit + Stadt / Zeitzone + Sekunden (12h Format)",
+      "description": "Zeigt die Uhrzeit mit Sekunden im 12h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time24": [
+    {
+      "displayName": "Uhrzeit (24h Format)",
+      "description": "Zeigt die Uhrzeit im 24h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time24AD": [
+    {
+      "displayName": "Uhrzeit Analog + Digital (24h Format)",
+      "description": "Analoges Ziffernblatt mit Digital-Uhrzeit im 24h Format",
+      "groupName": "Analog",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time24D": [
+    {
+      "displayName": "Uhrzeit + Datum (24h Format)",
+      "description": "Zeigt die Uhrzeit im 24h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time24DL": [
+    {
+      "displayName": "Uhrzeit + Datum + Stadt / Zeitzone (24h Format)",
+      "description": "Zeigt die Uhrzeit im 24h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time24L": [
+    {
+      "displayName": "Uhrzeit + Stadt / Zeitzone (24h Format)",
+      "description": "Zeigt die Uhrzeit im 24h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time24S": [
+    {
+      "displayName": "Uhrzeit + Sekunden (24h Format)",
+      "description": "Zeigt die Uhrzeit im 24h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time24SL": [
+    {
+      "displayName": "Uhrzeit + Stadt / Zeitzone + Sekunden (24h Format)",
+      "description": "Zeigt die Uhrzeit im 24h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "timeA": [
+    {
+      "displayName": "Uhrzeit Analog",
+      "description": "Analoges Ziffernblatt mit digital Uhrzeit",
+      "groupName": "Analog",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "timeAL": [
+    {
+      "displayName": "Uhrzeit Analog + Stadt / Zeitzone",
+      "description": "Analoges Ziffernblatt mit Stadt / Zeitzone",
+      "groupName": "Analog",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "date": [
+    {
+      "displayName": "Datum",
+      "description": "Zeigt das aktuelle Datum an",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ]
+}

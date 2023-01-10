@@ -218,6 +218,8 @@ dotnet_diagnostic.IDE0021.severity = warning
 dotnet_diagnostic.IDE0022.severity = warning
 dotnet_diagnostic.IDE0058.severity = none
 dotnet_diagnostic.IDE0059.severity = none
+dotnet_diagnostic.IDE0007.severity = none
+dotnet_diagnostic.IDE0008.severity = none
 
 dotnet_diagnostic.SA1108.severity = none
 dotnet_diagnostic.SA1117.severity = none
