@@ -39,9 +39,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="NodaTime, Version=3.1.6.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1, processorArchitecture=MSIL">
       <HintPath>..\packages\NodaTime.3.1.6\lib\netstandard2.0\NodaTime.dll</HintPath>
     </Reference>
@@ -59,8 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actions\WorldClock12AD.cs" />
+    <Compile Include="Actions\WorldClock12DWN.cs" />
     <Compile Include="Actions\WorldClock12D.cs" />
     <Compile Include="Actions\WorldClock12SL.cs" />
+    <Compile Include="Actions\WorldClock24DWN.cs" />
     <Compile Include="Actions\WorldClock24SL.cs" />
     <Compile Include="Actions\WorldClockAL.cs" />
     <Compile Include="Actions\WorldClock24AD.cs" />
@@ -70,6 +69,7 @@
     <Compile Include="Actions\WorldClock24D.cs" />
     <Compile Include="Actions\WorldClock12S.cs" />
     <Compile Include="Actions\WorldClock12L.cs" />
+    <Compile Include="Actions\WorldDateWN.cs" />
     <Compile Include="Actions\WorldDate.cs" />
     <Compile Include="Actions\WorldClock24S.cs" />
     <Compile Include="Actions\WorldClock12DL.cs" />

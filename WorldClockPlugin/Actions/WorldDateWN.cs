@@ -12,17 +12,16 @@ namespace Loupedeck.WorldClockPlugin
     using NodaTime.Extensions;
 
 
-
-    public class WorldClock12D : PluginDynamicCommand
+    public class WorldDateWN : PluginDynamicCommand
     {
         private WorldClockPlugin _plugin;
         private L10n _l10n;
         private Dictionary<String, String> l7dValues;
-        public WorldClock12D()
-            : base() => this.MakeProfileAction("tree");
+        public WorldDateWN()
+            : base(displayName: "Date", description: "Display date", groupName: "Date") => this.MakeProfileAction("tree");
         protected override PluginProfileActionData GetProfileActionData()
         {
-            var tree = new PluginProfileActionTree("Select location");
+            var tree = new PluginProfileActionTree("Select Location");
             tree.AddLevel(this.l7dValues["zone"]);
             tree.AddLevel(this.l7dValues["location"]);
 
@@ -44,7 +43,7 @@ namespace Loupedeck.WorldClockPlugin
                 return false;
             }
             this._l10n = new L10n(this._plugin);
-            this.l7dValues = this._l10n.GetL7dNames("time12D");
+            this.l7dValues = this._l10n.GetL7dNames("dateWN");
             if (this.l7dValues != null)
             {
                 this.DisplayName = this.l7dValues["displayName"];
@@ -53,9 +52,9 @@ namespace Loupedeck.WorldClockPlugin
             }
             else
             {
-                this.DisplayName = "Time + Date (12h Format)";
+                this.DisplayName = "Date + Weekday Name";
                 this.GroupName = "Digital";
-                this._plugin.Log.Info($"12hAD : l7dValues was empty or null: DisplayName: {this.l7dValues["displayName"]}, groupName: {this.l7dValues["groupName"]}.");
+                this._plugin.Log.Info($"12S : l7dValues was empty or null: DisplayName: {this.l7dValues["displayName"]}, groupName: {this.l7dValues["groupName"]}.");
             }
             this._plugin.Tick += (sender, e) => this.ActionImageChanged("");
             return base.OnLoad();
@@ -74,19 +73,17 @@ namespace Loupedeck.WorldClockPlugin
             Int32 idx = actionParameter.LastIndexOf("/");
             using (var bitmapBuilder = new BitmapBuilder(imageSize))
             {
+                bitmapBuilder.Clear(BitmapColor.Black);
                 if (!String.IsNullOrEmpty(actionParameter))
                 {
                     var x1 = bitmapBuilder.Width * 0.1;
-                    var x3 = bitmapBuilder.Width * 0.1;
                     var w = bitmapBuilder.Width * 0.8;
                     var y1 = bitmapBuilder.Height * 0.25;
-                    var y2 = bitmapBuilder.Height * 0.4;
-                    var y3 = bitmapBuilder.Height * 0.6;
+                    var y2 = bitmapBuilder.Height * 0.5;
                     var h = bitmapBuilder.Height * 0.3;
 
-                    bitmapBuilder.DrawText(today.ToString("hh:mm", CultureInfo.InvariantCulture), (Int32)x1, (Int32)y1, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 33 : 9, imageSize == PluginImageSize.Width90 ? 11 : 8);
-                    bitmapBuilder.DrawText(today.ToString("tt", CultureInfo.InvariantCulture), (Int32)x1, (Int32)y2, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 12 : 9, imageSize == PluginImageSize.Width90 ? 11 : 8);
-                    bitmapBuilder.DrawText(today.LocalDateTime.ToString(currentCulture.DateTimeFormat.ShortDatePattern, currentCulture), (Int32)x3, (Int32)y3, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 13 : 9, imageSize == PluginImageSize.Width90 ? 16 : 8, 1);
+                    bitmapBuilder.DrawText(currentCulture.DateTimeFormat.GetDayName((DayOfWeek)today.DayOfWeek), (Int32)x1, (Int32)y1, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 18 : 9, imageSize == PluginImageSize.Width90 ? 7 : 5, 10);
+                    bitmapBuilder.DrawText(today.LocalDateTime.ToString(currentCulture.DateTimeFormat.ShortDatePattern, currentCulture), (Int32)x1, (Int32)y2, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 15 : 9, imageSize == PluginImageSize.Width90 ? 7 : 5, 10);
                 }
                 return bitmapBuilder.ToImage();
             }

@@ -26,6 +26,15 @@
       "location": "Ville / Zone / Fuseau horaire"
     }
   ],
+  "time12DWN": [
+    {
+      "displayName": "Heure + Date + Nom du jour de la semaine (12h format d'heure)",
+      "description": "Affiche l'heure, date avec nom du jour de la semaine au format 12h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
   "time12DL": [
     {
       "displayName": "Heure + Date + Ville / Fuseau horaire (12h format d'heure)",
@@ -74,7 +83,7 @@
   "time24AD": [
     {
       "displayName": "Heure Analog + Digital (24h format d'heure)",
-      "description": "Analoges Ziffernblatt mit Digital-Heure im 24h format d'heure",
+      "description": "Cadran analogique avec heure numérique au format 24h",
       "groupName": "Analog",
       "zone": "Zone",
       "location": "Ville / Zone / Fuseau horaire"
@@ -84,6 +93,15 @@
     {
       "displayName": "Heure + Date (24h format d'heure)",
       "description": "Affiche l'heure au format 24h",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "time24DWN": [
+    {
+      "displayName": "Heure + Date + Nom du jour de la semaine (24h format d'heure)",
+      "description": "Affiche l'heure, date avec nom du jour de la semaine au format 24h",
       "groupName": "Digital",
       "zone": "Zone",
       "location": "Ville / Zone / Fuseau horaire"
@@ -150,6 +168,15 @@
       "groupName": "Digital",
       "zone": "Zone",
       "location": "Ville / Zone / Fuseau horaire"
+    }
+  ],
+  "dateWN": [
+    {
+      "displayName": "Date + Nom du jour de la semaine",
+      "description": "Affice la date avec nom du jour de la semaine",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
     }
   ]
 }

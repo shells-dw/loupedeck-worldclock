@@ -26,6 +26,15 @@
       "location": "Stadt / Gebiet / Zeitzone"
     }
   ],
+  "time12DWN": [
+    {
+      "displayName": "Uhrzeit + Datum + Wochentag (12h Format)",
+      "description": "Zeigt die Uhrzeit, das Datum und den Wochentag im 12h Format an",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
   "time12DL": [
     {
       "displayName": "Uhrzeit + Datum + Stadt / Zeitzone (12h Format)",
@@ -84,6 +93,15 @@
     {
       "displayName": "Uhrzeit + Datum (24h Format)",
       "description": "Zeigt die Uhrzeit im 24h Format",
+      "groupName": "Digital",
+      "zone": "Gebiet",
+      "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "time24DWN": [
+    {
+      "displayName": "Uhrzeit + Datum + Wochentag (24h Format)",
+      "description": "Zeigt die Uhrzeit, das Datum und den Wochentag im 24h Format an",
       "groupName": "Digital",
       "zone": "Gebiet",
       "location": "Stadt / Gebiet / Zeitzone"
@@ -150,6 +168,15 @@
       "groupName": "Digital",
       "zone": "Gebiet",
       "location": "Stadt / Gebiet / Zeitzone"
+    }
+  ],
+  "dateWN": [
+    {
+      "displayName": "Datum + Wochentag",
+      "description": "Zeigt das aktuelle Datum und den Wochentag an",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
     }
   ]
 }

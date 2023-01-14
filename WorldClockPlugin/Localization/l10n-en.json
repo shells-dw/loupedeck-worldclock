@@ -26,6 +26,15 @@
       "location": "Location/Timezone"
     }
   ],
+  "time12DWN": [
+    {
+      "displayName": "Time + Date + Weekday Name (12h format)",
+      "description": "Displays time, date and weekday name in 12h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
   "time12DL": [
     {
       "displayName": "Time + Date + Location (12h format)",
@@ -83,7 +92,16 @@
   "time24D": [
     {
       "displayName": "Time + Date (24h format)",
-      "description": "Displays time in 24h format",
+      "description": "Displays time and date in 24h format",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "time24DWN": [
+    {
+      "displayName": "Time + Date + Weekday Name (24h format)",
+      "description": "Displays time, date and weekday name in 24h format",
       "groupName": "Digital",
       "zone": "Zone",
       "location": "Location/Timezone"
@@ -147,6 +165,15 @@
     {
       "displayName": "Date",
       "description": "Display date",
+      "groupName": "Digital",
+      "zone": "Zone",
+      "location": "Location/Timezone"
+    }
+  ],
+  "dateWN": [
+    {
+      "displayName": "Date + Weekday Name",
+      "description": "Display date and weekday name",
       "groupName": "Digital",
       "zone": "Zone",
       "location": "Location/Timezone"

@@ -68,7 +68,6 @@ namespace Loupedeck.WorldClockPlugin
         {
             DateTimeZone zone = DateTimeZoneProviders.Tzdb[actionParameter];
             ZonedClock clock = SystemClock.Instance.InZone(zone);
-            LocalDate test = clock.GetCurrentDate();
             ZonedDateTime today = clock.GetCurrentZonedDateTime();
             CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 
