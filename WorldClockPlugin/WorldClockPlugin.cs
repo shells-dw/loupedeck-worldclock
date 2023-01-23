@@ -30,6 +30,10 @@ namespace Loupedeck.WorldClockPlugin
         // This method is called when the plugin is loaded during the Loupedeck service start-up.
         public override void Load()
         {
+            this.Info.Icon16x16 = EmbeddedResources.ReadImage("Loupedeck.WorldClockPlugin.metadata.Icon16x16.png");
+            this.Info.Icon32x32 = EmbeddedResources.ReadImage("Loupedeck.WorldClockPlugin.metadata.Icon32x32.png");
+            this.Info.Icon48x48 = EmbeddedResources.ReadImage("Loupedeck.WorldClockPlugin.metadata.Icon48x48.png");
+            this.Info.Icon256x256 = EmbeddedResources.ReadImage("Loupedeck.WorldClockPlugin.metadata.Icon256x256.png");
             HelperFunctions.ReadTzData();
             this.Timer();
         }

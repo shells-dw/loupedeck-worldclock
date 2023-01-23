@@ -10,8 +10,7 @@ namespace Loupedeck.WorldClockPlugin
 
     using NodaTime;
     using NodaTime.Extensions;
-
-
+    using NodaTime.Utility;
 
     public class WorldClock12DWN : PluginDynamicCommand
     {
@@ -88,7 +87,7 @@ namespace Loupedeck.WorldClockPlugin
 
                     bitmapBuilder.DrawText(today.ToString("hh:mm", CultureInfo.InvariantCulture), (Int32)x1, (Int32)y1, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 33 : 9, imageSize == PluginImageSize.Width90 ? 11 : 8);
                     bitmapBuilder.DrawText(today.ToString("tt", CultureInfo.InvariantCulture), (Int32)x2, (Int32)y2, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 12 : 9, imageSize == PluginImageSize.Width90 ? 11 : 8);
-                    bitmapBuilder.DrawText(currentCulture.DateTimeFormat.GetDayName((DayOfWeek)today.DayOfWeek), (Int32)x1, (Int32)y3, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 15 : 9, imageSize == PluginImageSize.Width90 ? 7 : 5, 10);
+                    bitmapBuilder.DrawText(currentCulture.DateTimeFormat.GetDayName(BclConversions.ToDayOfWeek(today.DayOfWeek)), (Int32)x1, (Int32)y3, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 15 : 9, imageSize == PluginImageSize.Width90 ? 7 : 5, 10);
                     bitmapBuilder.DrawText(today.LocalDateTime.ToString(currentCulture.DateTimeFormat.ShortDatePattern, currentCulture), (Int32)x3, (Int32)y4, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 13 : 9, imageSize == PluginImageSize.Width90 ? 16 : 8, 1);
                 }
                 return bitmapBuilder.ToImage();

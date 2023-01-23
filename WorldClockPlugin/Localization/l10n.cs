@@ -49,7 +49,8 @@
                             { "description", (String)this.actionL10n[LanguageCode][actionId][0]["description"] },
                             { "groupName", (String)this.actionL10n[LanguageCode][actionId][0]["groupName"] },
                             { "zone", (String)this.actionL10n[LanguageCode][actionId][0]["zone"] },
-                            { "location", (String)this.actionL10n[LanguageCode][actionId][0]["location"] }
+                            { "location", (String)this.actionL10n[LanguageCode][actionId][0]["location"] },
+                            { "additionalText", (String)this.actionL10n[LanguageCode][actionId][0]["additionalText"] }
                             };
             }
             catch
@@ -59,7 +60,8 @@
                             { "description", (String)this.actionL10n["en"][actionId][0]["description"] },
                             { "groupName", (String)this.actionL10n["en"][actionId][0]["groupName"] },
                             { "zone", (String)this.actionL10n["en"][actionId][0]["zone"] },
-                            { "location", (String)this.actionL10n["en"][actionId][0]["location"] }
+                            { "location", (String)this.actionL10n["en"][actionId][0]["location"] },
+                            { "additionalText", (String)this.actionL10n["en"][actionId][0]["additionalText"] }
                             };
             }
  

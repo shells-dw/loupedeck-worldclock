@@ -77,23 +77,16 @@ namespace Loupedeck.WorldClockPlugin
                 bitmapBuilder.Clear(BitmapColor.Black);
                 if (!String.IsNullOrEmpty(actionParameter))
                 {
-                    var x1 = bitmapBuilder.Width * 0.1;
-                    var w = bitmapBuilder.Width * 0.8;
-                    var y1 = bitmapBuilder.Height * 0.05;
-                    var h = bitmapBuilder.Height * 0.3;
-
-                    bitmapBuilder.DrawText(actionParameter.Substring(idx + 1).Replace("_", " "), (Int32)x1, (Int32)y1, (Int32)w, (Int32)h, new BitmapColor(255, 255, 255, 200), imageSize == PluginImageSize.Width90 ? 13 : 9, imageSize == PluginImageSize.Width90 ? 2 : 0, 10);
-                }
-                if (!String.IsNullOrEmpty(actionParameter))
-                {
                     var x1 = bitmapBuilder.Width * 0.01;
                     var x2 = bitmapBuilder.Width * 0.43;
                     var x3 = bitmapBuilder.Width * 0.1;
                     var w = bitmapBuilder.Width * 0.8;
                     var y1 = bitmapBuilder.Height * 0.35;
                     var y2 = bitmapBuilder.Height * 0.62;
+                    var y3 = bitmapBuilder.Height * 0.05;
                     var h = bitmapBuilder.Height * 0.3;
 
+                    bitmapBuilder.DrawText(actionParameter.Substring(idx + 1).Replace("_", " "), (Int32)x3, (Int32)y3, (Int32)w, (Int32)h, new BitmapColor(255, 255, 255, 200), imageSize == PluginImageSize.Width90 ? 13 : 9, imageSize == PluginImageSize.Width90 ? 2 : 0, 10);
                     bitmapBuilder.DrawText(today.ToString("hh:mm", CultureInfo.InvariantCulture), (Int32)x1, (Int32)y1, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 23 : 9, imageSize == PluginImageSize.Width90 ? 11 : 8);
                     bitmapBuilder.DrawText(today.ToString("tt", CultureInfo.InvariantCulture), (Int32)x2, (Int32)y1, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 12 : 9, imageSize == PluginImageSize.Width90 ? 11 : 8);
                     bitmapBuilder.DrawText(today.LocalDateTime.ToString(currentCulture.DateTimeFormat.ShortDatePattern, currentCulture), (Int32)x3, (Int32)y2, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 13 : 9, imageSize == PluginImageSize.Width90 ? 16 : 8, 1);

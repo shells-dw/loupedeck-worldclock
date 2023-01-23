@@ -10,7 +10,7 @@ namespace Loupedeck.WorldClockPlugin
 
     using NodaTime;
     using NodaTime.Extensions;
-
+    using NodaTime.Utility;
 
     public class WorldDateWN : PluginDynamicCommand
     {
@@ -82,7 +82,7 @@ namespace Loupedeck.WorldClockPlugin
                     var y2 = bitmapBuilder.Height * 0.5;
                     var h = bitmapBuilder.Height * 0.3;
 
-                    bitmapBuilder.DrawText(currentCulture.DateTimeFormat.GetDayName((DayOfWeek)today.DayOfWeek), (Int32)x1, (Int32)y1, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 18 : 9, imageSize == PluginImageSize.Width90 ? 7 : 5, 10);
+                    bitmapBuilder.DrawText(currentCulture.DateTimeFormat.GetDayName(BclConversions.ToDayOfWeek(today.DayOfWeek)), (Int32)x1, (Int32)y1, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 18 : 9, imageSize == PluginImageSize.Width90 ? 7 : 5, 10);
                     bitmapBuilder.DrawText(today.LocalDateTime.ToString(currentCulture.DateTimeFormat.ShortDatePattern, currentCulture), (Int32)x1, (Int32)y2, (Int32)w, (Int32)h, BitmapColor.White, imageSize == PluginImageSize.Width90 ? 15 : 9, imageSize == PluginImageSize.Width90 ? 7 : 5, 10);
                 }
                 return bitmapBuilder.ToImage();

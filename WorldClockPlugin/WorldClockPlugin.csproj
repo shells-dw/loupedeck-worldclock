@@ -69,6 +69,10 @@
     <Compile Include="Actions\WorldClock24D.cs" />
     <Compile Include="Actions\WorldClock12S.cs" />
     <Compile Include="Actions\WorldClock12L.cs" />
+    <Compile Include="Actions\WorldDay.cs" />
+    <Compile Include="Actions\DaysLeft.cs" />
+    <Compile Include="Actions\WorldDayLY.cs" />
+    <Compile Include="Actions\WorldWeek.cs" />
     <Compile Include="Actions\WorldDateWN.cs" />
     <Compile Include="Actions\WorldDate.cs" />
     <Compile Include="Actions\WorldClock24S.cs" />
@@ -106,6 +110,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Ressources\watchface1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="metadata\Icon16x16.png" />
+    <EmbeddedResource Include="metadata\Icon256x256.png" />
+    <EmbeddedResource Include="metadata\Icon32x32.png" />
+    <EmbeddedResource Include="metadata\Icon48x48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

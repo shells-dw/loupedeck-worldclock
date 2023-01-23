@@ -49,14 +49,22 @@ If you'd like to drop me a coffee for the hours I've spent on this:
 or use Ko-Fi [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y4CE9LH)
 
 # Changelog
+## [1.3.0] - 2023-01-23
+### Added
+- Display calendar week (based on local time)
+- Numeric day of the year (0-365, based on local time)
+- Numeric days remaining in the year (0-365, based on local time)
+- count down days until custom date (enter in YYYY-MM-DD format, based on local time)
+### Fixed
+- Weekday displays wouldn't work on Sunday _(I get that, but still fixed it_ :wink: _)_.
+
+<details><summary>Changelog History</summary><p>
+
 ## [1.2.0] - 2023-01-14
 ### Added
 - Digital watch faces with additional day of the week display
 ### Improved
 - Removed the need for Newtonsoft.Json and went with JSON functions that come with the SDK to avoid potential mismatch issues between the bundled and the NuGet Newtonsoft.Json version in the future
-
-<details><summary>Changelog History</summary><p>
-
 ## [1.1.0] - 2023-01-10
 ### Added
 - UI Translation for German and French
